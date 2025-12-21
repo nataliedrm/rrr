@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalie De Rosas | Social Impact Director</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700;800&family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-white: #ffffff; --bg-light: #f4f4f4; --text-black: #000000; --text-gray: #444444; --accent-pink: #ff007f; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; font-family: 'Open Sans', sans-serif; background-color: var(--bg-white); color: var(--text-black); overflow-x: hidden; font-size: 18px; line-height: 1.6; }
+        p { color: var(--text-gray); font-size: 1.1rem; margin-bottom: 20px; }
+        h1, h2, h3, h4, .logo, .btn { font-family: 'Oswald', sans-serif; text-transform: uppercase; margin: 0; }
+
+        /* HEADER */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: #fff; position: sticky; top: 0; z-index: 1000; border-bottom: 4px solid #000; }
+        .logo { font-size: 1.8rem; font-weight: 800; }
+        .logo span { color: var(--accent-pink); }
+        nav ul { display: flex; list-style: none; padding: 0; margin: 0; }
+        nav a { font-family: 'Oswald'; font-weight: 700; margin-left: 25px; text-decoration: none; color: #000; font-size: 1rem; }
+
+        /* HERO AL 50% */
+        .hero { display: grid; grid-template-columns: 1fr 1fr; height: 50vh !important; min-height: 450px; align-items: center; background: #fff; }
+        .hero-content { padding: 0 10%; }
+        .hero-content h1 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 0.95; font-weight: 800; margin-bottom: 15px; }
+        .hero-content h1 span { color: var(--accent-pink); }
+        .hero-intro { font-size: 1rem; border-left: 5px solid var(--accent-pink); padding-left: 20px; }
+        .hero-image-container { background:#eee; height:100%; display:flex; align-items:center; justify-content:center; overflow: hidden; }
+        .hero-image-container img { max-height: 45vh; width: auto; height: auto; object-fit: contain; display: block; }
+
+        /* STATS (NÚMEROS VISIBLES) */
+        .stats { background: #000 !important; color: #fff; display: flex; justify-content: space-around; padding: 40px 5%; flex-wrap: wrap; position: relative; z-index: 10; }
+        .stat-item { text-align: center; padding: 10px; }
+        .stat-item h2 { font-size: 4.5rem !important; color: var(--accent-pink) !important; font-weight: 800 !important; margin: 0; display: block !important; visibility: visible !important; }
+        .stat-item p { color: #fff !important; font-weight: 700; font-size: 1rem; margin: 0; }
+
+        /* TÍTULOS GRANDES NEGRO/ROSA */
+        h2 { font-weight: 800 !important; font-size: 3.5rem !important; color: #000 !important; text-align: center; margin-bottom: 40px; }
+        h2 span { color: var(--accent-pink) !important; }
+
+        /* GRID GENERAL */
+        section { padding: 60px 5%; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: #fff; padding: 35px; border: 2px solid #eee; position: relative; transition: 0.3s; }
+        .card:hover { border-color: #000; box-shadow: 8px 8px 0px var(--accent-pink); }
+        .card span { font-family: 'Oswald'; font-weight: 800; font-size: 3.5rem; color: rgba(0,0,0,0.05); position: absolute; top: 10px; right: 20px; }
+
+        /* 7 STEPS */
+        .steps-container { max-width: 1000px; margin: 0 auto; }
+        .step-item { background: #fff; padding: 40px; margin-bottom: 30px; border-left: 12px solid #000; display: flex; align-items: center; gap: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .step-number { font-size: 5rem !important; color: var(--accent-pink) !important; font-weight: 800 !important; line-height: 1; min-width: 80px; }
+
+        .linea-rosa { width: 100%; height: 8px; background: var(--accent-pink); }
+        .btn { display: inline-block; padding: 15px 40px; background: var(--accent-pink); color: #fff; box-shadow: 6px 6px 0px #000; text-decoration: none; font-weight: 800; transition: 0.3s; border:none; cursor:pointer; }
+        
+        /* COLABORADORES */
+        .colabs-text { font-family: 'Oswald'; font-weight: 700; opacity: 0.8; font-size: 1.2rem; text-align: center; line-height: 2; padding: 20px 0; }
+
+        @media (max-width: 900px) { .hero { grid-template-columns: 1fr; height: auto !important; min-height: auto; padding: 40px 0; } .hero-image-container { display: none; } .step-item { flex-direction: column; text-align: center; gap: 10px; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">NATALIE <span>DE ROSAS</span></div>
+        <ul>
+            <li><a href="#expertise">Impact</a></li>
+            <li><a href="#steps">Steps</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Web Design for <br><span>Impactful Nonprofits</span></h1>
+            <div class="hero-intro">
+                <p>Don't let high bounce rates stop your mission. We build websites that convert donors.</p>
+            </div>
+            <a href="#contact" class="btn" style="margin-top:20px;">START YOUR STRATEGY</a>
+        </div>
+        <div class="hero-image-container">
+            <img src="https://via.placeholder.com/600x800" alt="Natalie">
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-item"><h2>+235K</h2><p>People Reached</p></div>
+        <div class="stat-item"><h2>12+</h2><p>Years of Change</p></div>
+        <div class="stat-item"><h2>25K</h2><p>Youth Voters Activated</p></div>
+    </section>
+
+    <section id="expertise">
+        <h2>12 YEARS OF <span>IMPACT</span></h2>
+        <p style="text-align:center; max-width:800px; margin:0 auto 40px;">Twelve years of driving change across Latin America.</p>
+        <div class="grid-3">
+            <div class="card"><span>01</span><h3>Aesthetically Pleasing UX</h3><p>Seamless UX and professional design with flexible giving options.</p></div>
+            <div class="card"><span>02</span><h3>Accessible Content</h3><p>Compliance with ADA regulations and high contrast standards.</p></div>
+            <div class="card"><span>03</span><h3>Inspiring CTAs</h3><p>Calls-to-action based on donor behavior research.</p></div>
+            <div class="card"><span>04</span><h3>Compelling Storytelling</h3><p>Focusing on successes allows users to envision the difference.</p></div>
+            <div class="card"><span>05</span><h3>Creativity</h3><p>Interactive maps and quizzes that balance simple UX with engagement.</p></div>
+            <div class="card"><span>06</span><h3>Logical Structure</h3><p>Uniform page structure with vital pages prominently displayed.</p></div>
+            <div class="card"><span>07</span><h3>Uniform Branding</h3><p>Logo, colors, and typography must convey your mission instantly.</p></div>
+            <div class="card"><span>08</span><h3>Engaging Visuals</h3><p>Authentic images of real community members.</p></div>
+            <div class="card"><span>09</span><h3>Donation Page</h3><p>Simple forms, recurring options, and a powerful "Why".</p></div>
+        </div>
+    </section>
+
+    <section style="background: var(--bg-light);">
+        <h3 style="text-align:center; margin-bottom:20px;">PROUDLY COLLABORATED WITH</h3>
+        <div class="colabs-text">
+            UNICEF • UNDP • ONU HABITAT • INE • CONSEJO DE LA COMUNICACIÓN • UNAM • TEPJF • FEPADE • INDESOL • IMJUVE • FUNDACIÓN TELMEX • CEO CLASS • COPARMEX • IBERO • MY WORLD • KYBERNUS • FUNDACIÓN MAPFRE • RED LAC
+        </div>
+    </section>
+
+    <section style="background:#000; color:#fff; text-align:center;">
+        <h3 style="font-size:2.5rem; color:var(--accent-pink);">"Be the inspiration that leads change"</h3>
+        <p style="font-style:italic;">— Natalie De Rosas, Estratega Digital.</p>
+    </section>
+
+    <div class="linea-rosa"></div>
+
+    <section id="steps">
+        <h2>7 STEPS TO <span>JUMPSTART</span></h2>
+        <div class="steps-container">
+            <div class="step-item"><div class="step-number">1</div><div><h3>Establish your goals</h3><p>Does your site need a full rebuild or a low-scope refresh?</p></div></div>
+            <div class="step-item"><div class="step-number">2</div><div><h3>Research your audience</h3><p>Use analytics and personas.</p></div></div>
+            <div class="step-item"><div class="step-number">3</div><div><h3>Wireframe and moodboard</h3><p>Create a bare-bones outline.</p></div></div>
+            <div class="step-item"><div class="step-number">4</div><div><h3>Plan content strategy</h3><p>Plan a consistent schedule.</p></div></div>
+            <div class="step-item"><div class="step-number">5</div><div><h3>Develop functionality</h3><p>Custom features like glossaries or quizzes.</p></div></div>
+            <div class="step-item"><div class="step-number">6</div><div><h3>Track data and analytics</h3><p>Set up Google Analytics.</p></div></div>
+            <div class="step-item"><div class="step-number">7</div><div><h3>Regular maintenance</h3><p>Implement security patches.</p></div></div>
+        </div>
+    </section>
+
+    <section style="background:#000; color:#fff; display:grid; grid-template-columns: 1fr 1fr; gap:50px; align-items:center;">
+        <div>
+            <h2 style="color:#fff !important; text-align:left;">WORK WITH <span>KANOPI</span></h2>
+            <p style="color:#ccc;">We’ll ensure your website is positioned for long-term growth.</p>
+            <a href="#contact" class="btn" style="background:#fff; color:#000;">GET EXPERT SUPPORT</a>
+        </div>
+        <ul style="list-style:none; padding:0; font-size:1.2rem; line-height:2;">
+            <li>✔ User research and content strategy</li>
+            <li>✔ Website design and development</li>
+            <li>✔ Ongoing support & Maintenance</li>
+            <li>✔ Accessibility optimization</li>
+            <li>✔ Performance tracking</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>LATEST FROM <span>INSTAGRAM</span></h2>
+        <div class="grid-3">
+            <div style="height:400px; background:#222; border:2px solid #000; display:flex; align-items:center; justify-content:center; color:#fff;">REEL: Tips</div>
+            <div style="height:400px; background:#222; border:2px solid #000; display:flex; align-items:center; justify-content:center; color:#fff;">REEL: Estrategia</div>
+            <div style="height:400px; background:#222; border:2px solid #000; display:flex; align-items:center; justify-content:center; color:#fff;">STORY: BTS</div>
+        </div>
+    </section>
+
+    <section style="text-align:center; border-top:1px solid #eee;">
+        <h4 style="margin-bottom:20px;">SÍGUEME EN REDES</h4>
+        <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+            <a href="#" style="text-decoration:none; color:#000; font-weight:800; border:2px solid #000; padding:10px 20px;">LinkedIn</a>
+            <a href="#" style="text-decoration:none; color:#000; font-weight:800; border:2px solid #000; padding:10px 20px;">Instagram</a>
+            <a href="#" style="text-decoration:none; color:#000; font-weight:800; border:2px solid #000; padding:10px 20px;">TikTok</a>
+        </div>
+    </section>
+
+    <div class="linea-rosa"></div>
+
+    <section id="resources">
+        <h2>ESSENTIAL <span>RESOURCES</span></h2>
+        <div class="grid-3">
+            <div class="card"><h4>Creating a Digital Strategy</h4><p>Build a better action plan.</p></div>
+            <div class="card"><h4>Nonprofit Tech Assessment</h4><p>Find positive ROI on tech.</p></div>
+            <div class="card"><h4>Managing Content</h4><p>Tips for accessibility and SEO.</p></div>
+            <div class="card"><h4>The Donor Journey</h4><p>Streamline donor experience.</p></div>
+            <div class="card"><h4>SEO Survival Kit</h4><p>Make SEO work smarter.</p></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div style="max-width:800px; margin:0 auto; border:5px solid #000; padding:50px; text-align:center;">
+            <h2>READY TO <span>JOIN?</span></h2>
+            <form style="text-align:left; margin-top:30px;">
+                <input type="text" placeholder="Nombre" style="width:100%; padding:15px; margin-bottom:20px; border:2px solid #ddd; font-family:'Open Sans'; font-size:1rem;">
+                <input type="email" placeholder="Email" style="width:100%; padding:15px; margin-bottom:20px; border:2px solid #ddd; font-family:'Open Sans'; font-size:1rem;">
+                <textarea placeholder="Mensaje" style="width:100%; padding:15px; margin-bottom:20px; border:2px solid #ddd; height:100px; font-family:'Open Sans'; font-size:1rem;"></textarea>
+                <button type="button" class="btn" style="width:100%;">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <footer style="background:#000; color:#fff; padding:40px; text-align:center;">
+        &copy; 2025 Natalie De Rosas | Social Impact Strategist
+    </footer>
+
+</body>
+</html>
